@@ -1,0 +1,10 @@
+title: "Kurcovizija"
+description: "Kurcovizija — humor, gluposti i internet sadržaj koji verovatno nije nikome bio potreban."
+url: "https://kurcovizija.lol"
+baseurl: ""
+
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

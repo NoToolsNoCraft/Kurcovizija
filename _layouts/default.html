@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="ScIIpvykED9EiavIjxNwdrOs2ZmrPaRR0BoW0KhYwhU" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  {% seo %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+  <header>
+    <a href="{{ '/' | relative_url }}">
+      <strong>Kurcovizija</strong>
+    </a>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+ <footer>
+  <div class="footer-links">
+    <a href="{{ '/o-nama/' | relative_url }}">O nama</a>
+    <a href="{{ '/o-sebastijanu-kurcu/' | relative_url }}">O Sebastijanu Kurcu</a>
+    <a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a>
+  </div>
+
+  <p>© {{ 'now' | date: "%Y" }} Kurcovizija</p>
+</footer>
+
+</body>
+</html>
